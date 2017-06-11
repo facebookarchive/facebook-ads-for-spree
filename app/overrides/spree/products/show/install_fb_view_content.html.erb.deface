@@ -1,0 +1,2 @@
+<!-- insert_after 'div[itemtype="https://schema.org/Product"]' -->
+<%=fb_view_content @product%>

@@ -1,0 +1,6 @@
+<!-- insert_after 'div[id="order_details"]' -->
+<script>
+$('form[action="/checkout/update/confirm"]').on('submit', function() {
+  <%=fb_purchase_js @order.products, value: @order.total%>
+});
+</script>

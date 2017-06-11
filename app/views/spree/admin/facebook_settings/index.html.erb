@@ -1,0 +1,14 @@
+<h1>Facebook settings</h1>
+<p>
+<%=raw Spree.t(:connect_to_facebook_description)%>
+</p>
+<%=open_facebook_ads_window Spree.t(:connect_to_facebook),
+                            "Spree",
+                            Spree.version,
+                            product_default_currency,
+                            TZ_UNKNOWN,
+                            {class: 'btn btn-primary'},
+                            Rails.application.routes.url_helpers.spree_url(fb_default_url_options),
+                            '/admin/facebook_settings/update_settings'
+   # TODO use url helpers where possible
+%>

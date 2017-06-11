@@ -1,0 +1,6 @@
+<!-- insert_after 'div[data-hook="outside_cart_form"]' -->
+<script>
+$('form[action="/cart"]').on('submit', function() {
+  <%=fb_initiate_checkout_js @order.products, value: @order.total, num_items: @order.quantity%>
+});
+</script>

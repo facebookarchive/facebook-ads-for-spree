@@ -1,0 +1,2 @@
+<!-- insert_bottom 'ul' -->
+<li class='sidebar-menu-item'><%=link_to Spree.t('facebook_settings'), '/admin/facebook_settings'%></li>

@@ -1,0 +1,6 @@
+<!-- insert_after 'div[id="inside-product-cart-form"]' -->
+<script>
+$('form[action="/orders/populate"]').on('submit', function() {
+  <%=fb_add_to_cart_js [@product]%>
+});
+</script>

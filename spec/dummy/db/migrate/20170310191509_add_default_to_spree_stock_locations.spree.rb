@@ -1,0 +1,11 @@
+# Copyright (c) 2017-present, Facebook, Inc.
+# All rights reserved.
+
+# This migration comes from spree (originally 20140717185932)
+class AddDefaultToSpreeStockLocations < ActiveRecord::Migration[4.2]
+  def change
+    unless column_exists? :spree_stock_locations, :default
+      add_column :spree_stock_locations, :default, :boolean, null: false, default: false
+    end
+  end
+end

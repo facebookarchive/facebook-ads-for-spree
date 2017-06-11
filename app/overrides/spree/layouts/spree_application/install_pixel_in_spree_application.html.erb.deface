@@ -1,0 +1,2 @@
+<!-- insert_bottom 'head' -->
+<%=init_facebook_pixel(false)%>
